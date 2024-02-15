@@ -1,11 +1,15 @@
-import { Routes } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
+import Home from './components/Home'
+import Categories from './components/Categories'
+
 
 function App() {
 
   return (
     <Routes>
-        <Route index element={<Home/>}/>
+        <Route index element={<Home/>} />
+        <Route path="categories" element={<Categories/>} />
     </Routes>
   )
 }
