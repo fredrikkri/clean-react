@@ -1,4 +1,4 @@
-export default function Layout() {
+export default function Layout({children}) {
     return(
         <>
             <header>
@@ -8,6 +8,8 @@ export default function Layout() {
                     </ul>
                 </nav>
             </header>
+            {children}
+            <footer>Footer</footer>
         </>
     )
 }
