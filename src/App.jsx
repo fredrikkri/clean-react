@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Categories from './components/Categories'
 import Layout from './components/Layout'
 import Category from './components/Category'
+import CategoriesIndex from './components/CategoriesIndex'
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Routes>
           <Route index element={<Home/>} />
           <Route path="categories" element={<Categories/>}>
-            <Route path=':slug' element={<Category />}/>
+            <Route index element={<CategoriesIndex />} />
+            <Route path=':slug' element={<Category />} />
           </Route>
       </Routes>
     </Layout>
