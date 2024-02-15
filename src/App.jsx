@@ -3,6 +3,7 @@ import './App.css'
 import Home from './components/Home'
 import Categories from './components/Categories'
 import Layout from './components/Layout'
+import Category from './components/Category'
 
 
 function App() {
@@ -11,7 +12,9 @@ function App() {
     <Layout>
       <Routes>
           <Route index element={<Home/>} />
-          <Route path="categories" element={<Categories/>} />
+          <Route path="categories" element={<Categories/>}>
+            <Route path=':slug' element={<Category />}/>
+          </Route>
       </Routes>
     </Layout>
   )
