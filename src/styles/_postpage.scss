@@ -1,0 +1,23 @@
+.post-content{
+    text-align: left;
+    section{
+        background-color: rgb(252, 246, 251);
+        padding: 1rem;
+        form{
+            #comment{
+                width: 100%;
+                margin-bottom: 1rem;
+                border: none;
+                min-height: 150px;
+            }
+            button{
+                background-color: rgb(119, 119, 119);
+                color: white;
+            }
+        }
+        article{
+            border-top: 1px solid #a9d1c1;
+            padding-top: .5rem;
+        }
+    }
+}
